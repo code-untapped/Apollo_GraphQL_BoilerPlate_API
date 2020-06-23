@@ -13,6 +13,11 @@ const Query = `
         _empty: String
     }
     `;
+const Mutation = `
+    type Mutation {
+        _empty: String
+    }
+    `;
 
 const schema = makeExecutableSchema({
     typeDefs: [Query],

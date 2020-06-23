@@ -1,8 +1,8 @@
 export const typeDefs = `
     extend type Query {
     }
-    
-    type Mutation {
+
+    extend type Mutation {
     }  
 
     type User {
