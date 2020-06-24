@@ -1,0 +1,12 @@
+version: '3'
+services:
+  apollo_graphql_boilerplate_api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+    - "80:8080"
+    volumes:
+    - /Users/joshthom/Documents/GitHub/Apollo_GraphQL_BoilerPlate_API:/usr/src/app
+volumes:
+  code: {} 

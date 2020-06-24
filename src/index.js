@@ -1,8 +1,13 @@
-const port = process.env.PORT || 8080;
-const { ApolloServer, makeExecutableSchema } = require("apollo-server-express");
-const express = require("express");
-const cors = require("cors");
+import { ApolloServer, makeExecutableSchema } from "apollo-server-express";
+import express from "express";
+import cors from "cors";
+import { merge } from "lodash";
 
+import { typeDefs as userSchema } from "../src/typeDefs/user_typeDefs";
+import { resolvers as userResolvers } from "../src/resolvers/user_resolver";
+import { typeDefs as Utils } from "../src/typeDefs/util_typeDefs";
+
+const port = process.env.PORT || 8080;
 const app = express();
 
 app.use(cors());
@@ -20,8 +25,8 @@ const Mutation = `
     `;
 
 const schema = makeExecutableSchema({
-    typeDefs: [Query],
-    resolvers: merge(resolvers)
+    typeDefs: [Query, Mutation, userSchema, Utils],
+    resolvers: merge(resolvers, userResolvers)
 });
 
 const server = new ApolloServer({ schema, debug: true, tracing: true, playground: true });

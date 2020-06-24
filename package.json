@@ -1,37 +1,38 @@
 {
-  "name": "apollo_graphql_boilerplate_api",
-  "version": "1.0.0",
-  "description": "A Apollo GraphQL boiler plate API ready to use",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/code-untapped/Apollo_GraphQL_BoilerPlate_API.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/code-untapped/Apollo_GraphQL_BoilerPlate_API/issues"
-  },
-  "homepage": "https://github.com/code-untapped/Apollo_GraphQL_BoilerPlate_API#readme",
-  "dependencies": {
-    "@babel/core": "^7.10.3",
-    "@babel/node": "^7.10.3",
-    "@babel/polyfill": "^7.10.1",
-    "@babel/preset-env": "^7.10.3",
-    "apollo-server": "^2.15.0",
-    "apollo-server-express": "^2.15.0",
-    "apollo-server-testing": "^2.15.0",
-    "async": "^3.2.0",
-    "axios": "^0.19.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "graphql": "^15.1.0",
-    "jest": "^26.1.0",
-    "lodash": "^4.17.15",
-    "nodemon": "^2.0.4",
-    "path": "^0.12.7"
-  }
+    "name": "apollo_graphql_boilerplate_api",
+    "version": "1.0.0",
+    "description": "A Apollo GraphQL boiler plate API ready to use",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node ./src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/code-untapped/Apollo_GraphQL_BoilerPlate_API.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/code-untapped/Apollo_GraphQL_BoilerPlate_API/issues"
+    },
+    "homepage": "https://github.com/code-untapped/Apollo_GraphQL_BoilerPlate_API#readme",
+    "dependencies": {
+        "@babel/core": "^7.10.3",
+        "@babel/node": "^7.10.3",
+        "@babel/polyfill": "^7.10.1",
+        "@babel/preset-env": "^7.10.3",
+        "apollo-server": "^2.15.0",
+        "apollo-server-express": "^2.15.0",
+        "apollo-server-testing": "^2.15.0",
+        "async": "^3.2.0",
+        "axios": "^0.19.2",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "graphql": "^15.1.0",
+        "jest": "^26.1.0",
+        "lodash": "^4.17.15",
+        "nodemon": "^2.0.4",
+        "path": "^0.12.7"
+    }
 }
